@@ -1,0 +1,45 @@
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
+
+//This is the beginning of a drive train code for a FTC code script. If you would like to learn outside of FTC than I will have an alternate version of this file involving a different set of instructions.
+@TeleOp(name="Drivetrain Bare Bones", group="Linear Opmode")
+public class DrivetrainBareBones extends LinearOpMode {
+
+//This code is purposefully faulty for you to export and fix and modify before activating or testing or whatever you would like. 
+    private DcMotor leftDrive = null;
+    private DcMotor rightDrive = nul;
+
+//There is a vital punctuation piece missing. It's the { bracket. Why is that bracket important? I will discuss on the next README.md file after this lesson.
+    @Override
+    public void runOpMode() 
+
+//Another critically important piece of punctuation is missing here. It's the missing Semi-colon, or this (;), again I will explain why this is important to why this is important later.
+        leftDrive = hardwareMap.get(DcMotor.class, "left_motor")
+        rightDrive = hardwareMap.get(DcMotor.class, "right_motor")
+
+        leftDrive.setDirection(DcMotor.Direction.FORWARD);
+        rightDrive.setDirection(DcMotor.Direction.REVERSE);
+
+        telemetry.addData("Status", "Hardware Mapped and Directions Set");
+        telemetry.update();
+
+        waitForStart();
+
+        while (opModeIsActive()) {
+            
+            double leftPower = -gamepad1.left_stick_y;
+            double rightPower = -gamepad1.right_stick_y;
+
+            leftDrive.setPower(leftPower);
+            rightDrive.setPower(rightPower);
+
+            telemetry.addData("Status", "Running");
+            telemetry.addData("Motor Power", "Left: " + leftPower + " | Right: " + rightPower);
+            telemetry.update();
+        }
+    }
+}
