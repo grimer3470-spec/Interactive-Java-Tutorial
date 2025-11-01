@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 @TeleOp(name="Drivetrain Bare Bones", group="Linear Opmode")
 public class DrivetrainBareBones extends LinearOpMode {
 
-//This code is purposefully faulty for you to export and fix and modify before activating or testing or whatever you would like. 
+//This code is purposefully faulty for you to export and fix and modify before activating or testing or whatever you would like. The right drive has a error in spelling, where nul should be spelt as null.
     private DcMotor leftDrive = null;
     private DcMotor rightDrive = nul;
 
@@ -20,19 +20,22 @@ public class DrivetrainBareBones extends LinearOpMode {
 //Another critically important piece of punctuation is missing here. It's the missing Semi-colon, or this (;), again I will explain why this is important to why this is important later.
         leftDrive = hardwareMap.get(DcMotor.class, "left_motor")
         rightDrive = hardwareMap.get(DcMotor.class, "right_motor")
-
+//These variables below allow for the motors to both go the same direction with needing to specify it every time you add a different fucntion for those motors.
         leftDrive.setDirection(DcMotor.Direction.FORWARD);
         rightDrive.setDirection(DcMotor.Direction.REVERSE);
 
         telemetry.addData("Status", "Hardware Mapped and Directions Set");
-        telemetry.update();
+
+//There are three things wrong here, first off update is spelt wrong, second we are missing the other part of the parenthesese, and finally the semi-colon is missing as well.
+        telemetry.updat)
 
         waitForStart();
 
         while (opModeIsActive()) {
-            
-            double leftPower = -gamepad1.left_stick_y;
-            double rightPower = -gamepad1.right_stick_y;
+
+//There is a critical error hiding with the (gamepad1). statements. There should be underscores, or these (_) in between the stick and y for both left and right.
+            double leftPower = -gamepad1.left_sticky;
+            double rightPower = -gamepad1.right_sticky;
 
             leftDrive.setPower(leftPower);
             rightDrive.setPower(rightPower);
