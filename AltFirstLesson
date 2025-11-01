@@ -1,0 +1,56 @@
+//Now before you go and decide to use this for a game or try and steal the code, you should know that its very theoretical and probably doesn't work and is based on Java
+
+//Also note that I'll be putting in purposeful mistakes so that I can explain why something is needed.
+
+//GameCharacter is spelt wrong, which would ruin the code right off the bat and also note the missing curly bracket.
+
+public class GameCharacte 
+
+//note that private int ; should actually be priavet int x; and because you didn't check that fact, now x doesn't exist.
+    private int ;
+    private int y;
+    private final int speed = 1;
+
+    public GameCharacter(int startX, int startY) {
+        this.x = startX;
+        this.y = startY;
+    }
+
+//Can you hazard a guess on whats wrong here? Thats right! The CAPITAL P is missing. Note how I said CAPITAL and not just p. Remember that.
+    public void updateosition(String direction) {
+        switch (direction.toUpperCase()) {
+            case "UP":
+//note how there are quotation marks missing. That would ruin the whole code.
+            case W":
+                y -= speed;
+                break;
+            case "DOWN":
+            case "S":
+                y += speed;
+                break;
+            case "LEFT":
+            case "A":
+                x -= speed;
+                break;
+            case "RIGHT":
+            case "D":
+                x += speed;
+                break;
+            default:
+                System.out.println("Invalid movement command.");
+        }
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    @Override
+    public String toString() {
+        return "Player position: (" + x + ", " + y + ")";
+    }
+}
