@@ -1,7 +1,8 @@
-#Lesson two.
+        #Lesson two.
 
 Java utilizes specific primitive data types for basic values, along with the non-primitive `String` type. Variables must be declared with a type, can be initialized with a value, and their values can be reassigned during the program's execution.
-##Primitive Data Types and String:
+Primitive Data Types and String:
+        
 Primitive data types are the basic building blocks of data manipulation in Java, storing the value directly in memory. 
 `int`: Stores integer (whole) numbers without decimals, such as 123 or -45. It is a 32-bit signed integer type.
 `double`: Stores floating-point (decimal) numbers, such as 19.99 or -12.5. It offers double precision and is the default for decimals.
