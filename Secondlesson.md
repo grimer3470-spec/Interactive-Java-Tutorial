@@ -40,10 +40,10 @@ Operator 	Name	  Description
 
 Here is a demonstration of basic arithmetic operations:
 java
-`public class ArithmeticDemo {
-    public static void main(String[] args) {
-        int a = 10;
-        int b = 3;
+`public class ArithmeticDemo {`
+    `public static void main(String[] args) {`
+      `  int a = 10;`
+      `  int b = 3;`
         
         // Integer operations
         int sum = a + b;         // 10 + 3 = 13
@@ -68,4 +68,4 @@ java
         System.out.println("Double Quotient: " + quotientDouble);
         System.out.println("Mixed Type Quotient: " + mixedQuotient);
     }
-}`
+ `  }`
