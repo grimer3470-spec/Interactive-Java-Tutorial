@@ -1,1 +1,3 @@
-Java utilizes specific primitive data types for basic values, along with the non-primitive String type. Variables must be declared with a type, can be initialized with a value, and their values can be reassigned during the program's execution
+Java utilizes specific primitive data types for basic values, along with the non-primitive `String` type. Variables must be declared with a type, can be initialized with a value, and their values can be reassigned during the program's execution.
+Primitive Data Types and String
+
