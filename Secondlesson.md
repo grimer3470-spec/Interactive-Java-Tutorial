@@ -40,32 +40,27 @@ Operator 	Name	  Description
 
 Here is a demonstration of basic arithmetic operations:
 java
-`public class ArithmeticDemo {`
-    `public static void main(String[] args) {`
-      `  int a = 10;`
-      `  int b = 3;`
-        
-        // Integer operations
-        int sum = a + b;         // 10 + 3 = 13
-        int difference = a - b;  // 10 - 3 = 7
-        int product = a * b;     // 10 * 3 = 30
-        int quotientInt = a / b; // 10 / 3 = 3 (integer division truncates the decimal)
-        int remainder = a % b;   // 10 % 3 = 1 (the remainder of 10 divided by 3)
-        
-        System.out.println("Integer Sum: " + sum);
-        System.out.println("Integer Difference: " + difference);
-        System.out.println("Integer Product: " + product);        System.out.println("Integer Quotient: " + quotientInt);
-        System.out.println("Integer Remainder: " + remainder);
-
-        // Double operations
-        double x = 10.0;
-        double y = 3.0;
-
-        double quotientDouble = x / y; // 10.0 / 3.0 = 3.333...
-        // Performing division with an int and a double results in a double
-        double mixedQuotient = a / y; // 10 / 3.0 = 3.333...
-
-        System.out.println("Double Quotient: " + quotientDouble);
-        System.out.println("Mixed Type Quotient: " + mixedQuotient);
-    }
- `  }`
+        `public class ArithmeticDemo { 
+            public static void main(String[] args) {
+                int a = 10;
+                int b = 3;
+            // Integer operations
+            int sum = a + b;         // 10 + 3 = 13
+            int difference = a - b;  // 10 - 3 = 7
+            int product = a * b;     // 10 * 3 = 30
+            int quotientInt = a / b; // 10 / 3 = 3 (integer division truncates the decimal)
+            int remainder = a % b;   // 10 % 3 = 1 (the remainder of 10 divided by 3)
+            System.out.println("Integer Sum: " + sum);
+            System.out.println("Integer Difference: " + difference);
+            System.out.println("Integer Product: " + product);        System.out.println("Integer Quotient: " + quotientInt);
+            System.out.println("Integer Remainder: " + remainder);
+            // Double operations
+            double x = 10.0;
+            double y = 3.0;
+            double quotientDouble = x / y; // 10.0 / 3.0 = 3.333...
+            // Performing division with an int and a double results in a double
+            double mixedQuotient = a / y; // 10 / 3.0 = 3.333...
+            System.out.println("Double Quotient: " + quotientDouble);
+            System.out.println("Mixed Type Quotient: " + mixedQuotient);
+        }
+     }`
