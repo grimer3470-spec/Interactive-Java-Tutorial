@@ -23,11 +23,13 @@ Use code with caution.`
 
 Assignment is changing the value of a variable that has already been declared. This can be done as many times as needed. 
 java
+
 `int x = 7; // Initialization
 x = 12; // Assignment (changing the value of x to 12)
 price = 9.99; // Assignment to a previously declared variable
-name = "Java"; // Assignment to a previously declared String
-Use code with caution.`
+name = "Java"; // Assignment to a previously declared String`
+
+Use code with caution.
 
 Basic Arithmetic Operations
 Java supports standard arithmetic operators for numeric types. The result of an operation between two integers will be an integer; to get a decimal result, at least one operand should be a double. 
@@ -40,7 +42,9 @@ Operator 	Name	  Description
 
 Here is a demonstration of basic arithmetic operations:
 java
-        `public class ArithmeticDemo { 
+
+        public class ArithmeticDemo { 
+        
             public static void main(String[] args) {
                 int a = 10;
                 int b = 3;
@@ -63,4 +67,4 @@ java
             System.out.println("Double Quotient: " + quotientDouble);
             System.out.println("Mixed Type Quotient: " + mixedQuotient);
         }
-     }`
+     }
